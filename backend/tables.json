@@ -1,0 +1,29 @@
+[
+  {
+    "Tables_in_issue_tracking": "admin"
+  },
+  {
+    "Tables_in_issue_tracking": "events"
+  },
+  {
+    "Tables_in_issue_tracking": "maintenance"
+  },
+  {
+    "Tables_in_issue_tracking": "notifications"
+  },
+  {
+    "Tables_in_issue_tracking": "otp_verifications"
+  },
+  {
+    "Tables_in_issue_tracking": "payment_history"
+  },
+  {
+    "Tables_in_issue_tracking": "payments"
+  },
+  {
+    "Tables_in_issue_tracking": "secretary"
+  },
+  {
+    "Tables_in_issue_tracking": "users"
+  }
+]

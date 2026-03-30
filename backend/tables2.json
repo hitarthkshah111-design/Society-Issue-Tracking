@@ -1,0 +1,14 @@
+[
+  "admin",
+  "events",
+  "feedback",
+  "issue_logs",
+  "issues",
+  "maintenance",
+  "notifications",
+  "otp_verifications",
+  "payment_history",
+  "payments",
+  "secretary",
+  "users"
+]

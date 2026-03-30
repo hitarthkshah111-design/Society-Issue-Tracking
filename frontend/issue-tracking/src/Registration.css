@@ -1,0 +1,33 @@
+.register-page {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f2f5;
+    padding: 20px;
+  }
+  
+  .register-card-container {
+    background: #fff;
+    border-radius: 15px;
+    padding: 40px 30px;
+    width: 100%;
+    max-width: 900px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  }
+  
+  .btn-success {
+    background-color: #198754;
+    border-color: #198754;
+  }
+  
+  .btn-success:hover {
+    background-color: #157347;
+    border-color: #146c43;
+  }
+  
+  @media (max-width: 768px) {
+    .register-card-container {
+      padding: 30px 20px;
+    }
+  }  

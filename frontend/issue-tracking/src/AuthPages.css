@@ -1,0 +1,236 @@
+/* ======== Shared Auth Pages CSS ======== */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+/* ---- Role Selection Page ---- */
+.role-select-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  font-family: 'Inter', sans-serif;
+  padding: 30px 20px;
+}
+
+.role-select-page .brand {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.role-select-page .brand h1 {
+  color: #ffffff;
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0 0 6px;
+  letter-spacing: -0.5px;
+}
+
+.role-select-page .brand p {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+.role-cards {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.role-card {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+  padding: 40px 32px;
+  width: 220px;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  transition: transform 0.25s ease, background 0.25s ease, box-shadow 0.25s ease;
+  backdrop-filter: blur(10px);
+}
+
+.role-card:hover {
+  transform: translateY(-8px);
+  background: rgba(255, 255, 255, 0.16);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+.role-card .role-icon {
+  font-size: 3rem;
+  margin-bottom: 16px;
+  display: block;
+}
+
+.role-card .role-name {
+  color: #ffffff;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0 0 6px;
+}
+
+.role-card .role-desc {
+  color: rgba(255, 255, 255, 0.55);
+  font-size: 0.8rem;
+  margin: 0;
+}
+
+/* ---- Auth Form Page (Login / Register) ---- */
+.auth-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 20px;
+  font-family: 'Inter', sans-serif;
+}
+
+.auth-page.admin-theme {
+  background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
+}
+
+.auth-page.secretary-theme {
+  background: linear-gradient(135deg, #0d2137, #1a3a52, #1e6091);
+}
+
+.auth-page.user-theme {
+  background: linear-gradient(135deg, #1b1b3a, #2d2b55, #3a3078);
+}
+
+.auth-card {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 44px 40px;
+  width: 100%;
+  max-width: 480px;
+  box-shadow: 0 24px 64px rgba(0, 0, 0, 0.35);
+}
+
+.auth-card.wide {
+  max-width: 680px;
+}
+
+.auth-header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.auth-header .role-badge {
+  display: inline-block;
+  padding: 5px 14px;
+  border-radius: 30px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.admin-theme .auth-card .role-badge { background: #e8f0fe; color: #1a56db; }
+.secretary-theme .auth-card .role-badge { background: #e0f2fe; color: #0369a1; }
+.user-theme .auth-card .role-badge { background: #ede9fe; color: #7c3aed; }
+
+.auth-header h2 {
+  font-size: 1.65rem;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin: 0 0 6px;
+}
+
+.auth-header p {
+  color: #6b7280;
+  font-size: 0.875rem;
+  margin: 0;
+}
+
+.auth-card .form-label {
+  font-weight: 500;
+  font-size: 0.875rem;
+  color: #374151;
+  margin-bottom: 5px;
+}
+
+.auth-card .form-control {
+  border: 1.5px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 10px 14px;
+  font-size: 0.9rem;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.auth-card .form-control:focus {
+  border-color: #4f46e5;
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.12);
+  outline: none;
+}
+
+.auth-card select.form-control {
+  cursor: pointer;
+}
+
+.auth-btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 8px;
+  transition: opacity 0.2s, transform 0.15s;
+}
+
+.auth-btn:hover:not(:disabled) {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+.auth-btn:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+.admin-theme .auth-card .auth-btn { background: linear-gradient(90deg, #1a56db, #1e40af); color: #fff; }
+.secretary-theme .auth-card .auth-btn { background: linear-gradient(90deg, #0369a1, #0284c7); color: #fff; }
+.user-theme .auth-card .auth-btn { background: linear-gradient(90deg, #7c3aed, #6d28d9); color: #fff; }
+
+.auth-footer {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+
+.auth-footer a {
+  font-weight: 600;
+  text-decoration: none;
+  margin-left: 4px;
+}
+
+.admin-theme .auth-card .auth-footer a { color: #1a56db; }
+.secretary-theme .auth-card .auth-footer a { color: #0369a1; }
+.user-theme .auth-card .auth-footer a { color: #7c3aed; }
+
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.85rem;
+  text-decoration: none;
+  margin-bottom: 20px;
+  transition: color 0.2s;
+}
+
+.back-link:hover { color: #fff; }
+
+@media (max-width: 576px) {
+  .auth-card { padding: 32px 24px; }
+  .role-card { width: 160px; padding: 30px 20px; }
+}

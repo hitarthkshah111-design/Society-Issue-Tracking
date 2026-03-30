@@ -1,0 +1,34 @@
+[
+  {
+    "Field": "id",
+    "Type": "int(11)"
+  },
+  {
+    "Field": "receiver_type",
+    "Type": "varchar(50)"
+  },
+  {
+    "Field": "receiver_id",
+    "Type": "int(11)"
+  },
+  {
+    "Field": "is_read",
+    "Type": "tinyint(4)"
+  },
+  {
+    "Field": "created_at",
+    "Type": "timestamp"
+  },
+  {
+    "Field": "message",
+    "Type": "varchar(255)"
+  },
+  {
+    "Field": "building_name",
+    "Type": "varchar(255)"
+  },
+  {
+    "Field": "user_id",
+    "Type": "int(11)"
+  }
+]
